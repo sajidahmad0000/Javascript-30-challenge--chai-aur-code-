@@ -41,6 +41,15 @@ const sum=num.reduce(function (acc,curr){
  
 console.log(sum)
 
+const nums=[99,88,5,46,2,245,12];
+const max = nums.reduce((acc,curr)=>{
+    if(curr>acc){
+        acc=curr;
+    }
+    return acc;
+},0)
+
+console.log(max)
 
 //  reduce function takes a two argument first as function second as the value for acc
 // the  reduce function which is takes has two parameters accumulator and current
